@@ -637,12 +637,15 @@ textarea[contenteditable] {
 /* End of Boilerplate */
 
 /* Start of custom */
+@green_main: #3cd5af; /* Pantone 3385 C; L: 77, a: -48, b: 7 */
+@green_dark_main: #00b289; /* Pantone 339 C; L: 64, a: -54, b: 8 */
+@green_light_main: #75e1c2; /* Pantone 3375 C; L: 82, a: -38, b: 5 */
 
 main {
 	header {
 		width: 80%;
 		padding: 5% 10%;
-		background: #51DDB6;
+		background: @green_main;
 
 		.logo {
 			text-align: center;
@@ -676,8 +679,13 @@ main {
 
 				&:hover {
 					background-color: #fff;
-					color: #13A27A;
+					color: @green_dark_main;
 				}
+			}
+
+			input:focus {
+				border-color: @green_dark_main;
+				outline-color: #fff;
 			}
 		}
 	}
