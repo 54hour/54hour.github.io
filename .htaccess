@@ -863,6 +863,6 @@ FileETag None
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
-    RewriteCond %{HTTP_HOST} ^mail.54hour.com
+    RewriteCond %{HTTP_HOST} ^mail\.54hour\.com$
     RewriteRule ^(.*)$ https://mail.google.com/a/54hour.com [L,R=301,NC,QSA]
 </IfModule>
